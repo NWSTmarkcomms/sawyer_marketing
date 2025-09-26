@@ -33,7 +33,7 @@
 
     button {
       padding: 0.6rem 1.2rem;
-      background-color: #b00;
+      background-color: #7c2529;
       color: #fff;
       font-weight: bold;
       border: none;
@@ -42,7 +42,7 @@
     }
 
     button:hover {
-      background-color: #900;
+      background-color: #7c2529;
     }
   </style>
 </head>
@@ -55,16 +55,18 @@
         <div class="search-container">
           <input type="text" id="portalSearch" placeholder="Search materials..." />
         </div>
-        <nav class="navbar"> 
-          <a href="catalog.html">All Materials</a>
-          <a href="door-hangers.html">Door Hangers</a>
-          <a href="flyers.html">Flyers</a>
-          <a href="leave-behinds.html">Leave Behinds</a>
-          <a href="takeover.html">Takeover Cards</a>
-          <a href="thank-you-cards.html">Thank You Cards</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
+<nav class="navbar"> 
+  <a href="catalog.html">All Materials</a>
+  <a href="door-hangers.html">Door Hangers</a>
+  <a href="leave-behinds.html">Leave Behinds</a>
+  <a href="event-materials.html">Event Materials</a>
+  <a href="flyers.html">Flyers</a>
+  <a href="takeover.html">Takeover Cards</a>
+  <a href="thank-you-cards.html">Thank You Cards</a>
+  <a href="new-construction.html">New Construction</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
       </div>
     </div>
   </header>
@@ -75,7 +77,7 @@
 
   <main class="page-content-wrapper">
     <div style="width: 100%; max-width: 600px; margin: 0 auto;">
-      <h1 style="color: #b00; text-align: center;">How Can We Help?</h1>
+      <h1 style="color: #7c2529; text-align: center;">How Can We Help?</h1>
       <p style="text-align: center;">Share Your Custom Request Here!</p>
 
       <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
@@ -86,7 +88,7 @@
         <button type="submit" class="button">Send Message</button>
       </form>
 
-      <div id="thankYouMessage" style="display:none; margin-top:1.5rem; color:green; font-weight:bold; text-align: center;">
+      <div id="thankYouMessage" style="display:none; margin-top:1.5rem; color:7c2529; font-weight:bold; text-align: center;">
         ✅ Thanks! We'll be in touch shortly.
       </div>
     </div>
@@ -97,7 +99,7 @@
   </footer>
 
   <script>
-    const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/12716030/u2575mp/";
+    const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/12716030/um5y8ey/";
 
     document.getElementById("contactForm").addEventListener("submit", async function(event) {
       event.preventDefault();
@@ -112,7 +114,7 @@
         });
 
         if (res.ok) {
-          window.location.href = "https://bughousesuccess.netlify.app/";
+          window.location.href = "https://sawyer-marketing.netlify.app/contact";
         } else {
           alert("Something went wrong. Please try again.");
         }

@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background-color: #b00;
+  background-color: #7c2529;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .hero-banner {
-  background: linear-gradient(to right, #900, #b00);
+  background: linear-gradient(to right, #A64C50, #7c2529);
   color: white;
   padding: 2rem;
   text-align: center;
@@ -45,17 +45,17 @@ body {
   margin: 0;
 }
 
+
 .product-grid {
   display: grid;
-grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+  gap: 1rem;
   padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
 }
-
 
 .product-card:hover {
   transform: translateY(-4px);
@@ -105,13 +105,13 @@ body.modal-open .product-card:hover {
 
 .product-details input:focus,
 .product-details select:focus {
-  border-color: #b00;
+  border-color: #7c2529;
   outline: none;
 }
 
 .product-details button {
   padding: 0.75rem;
-  background-color: #b00;
+  background-color: #7c2529;
   color: white;
   border: none;
   border-radius: 6px;
@@ -122,7 +122,7 @@ body.modal-open .product-card:hover {
 }
 
 .product-details button:hover {
-  background-color: #900;
+  background-color: #6ba136;
 }
 
 
@@ -210,20 +210,26 @@ body.modal-open {
 
 .product-card .product-title {
   font-size: 1.5rem;
-  color: #b00;
+  color: #7c2529;
   margin: 0 0 1rem 0;
   text-align: left;
 }
 
 .product-card {
-  background: #fffdf5; /* ✅ soft cream color */
-  border: 1px solid #e8e6dd; /* optional subtle border */
+  background: #ffffff; 
+  border: 1px solid #e8e6dd;
   border-radius: 12px;
   padding: 1rem 1.25rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); /* gentle lift */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
-  transform-origin: top left; /* Keeps alignment natural */
+  transform-origin: top left;
+
+  max-width: 320px;   /* ✅ keep cards from being oversized */
+  width: 100%;        /* ✅ let them shrink as needed */
+  margin: 0 auto;     /* ✅ center inside each grid cell */
 }
+
+
 
 .nav-search-wrapper {
   display: flex;
@@ -316,7 +322,7 @@ body.modal-open {
   display: flex;
   align-items: center;
   max-width: 1200px;
-  border: 2px solid #b00;
+  border: 2px solid #85C446;
   border-radius: 12px;
   overflow: hidden;
   background-color: white;
@@ -342,7 +348,7 @@ body.modal-open {
 
 .feature-btn {
   padding: 0.75rem 1.5rem;
-  border: 2px solid black;
+  border: 2px solid rgb(52, 37, 37);
   background: transparent;
   font-weight: bold;
   font-size: 1rem;
@@ -370,7 +376,7 @@ body.modal-open {
 
 .product-details.button {
   padding: 0.75rem 1.25rem;
-  background-color: #b00;
+  background-color: #7c2529;
   color: white;
   border-radius: 6px;
   font-weight: bold;
@@ -382,14 +388,14 @@ body.modal-open {
 }
 
 .product-details.button:hover {
-  background-color: #900;
+  background-color: #A64C50;
 }
 
 .return-home-btn {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
-  background-color: #b00;
+  background-color: #7c2529;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -398,7 +404,7 @@ body.modal-open {
 }
 
 .return-home-btn:hover {
-  background-color: #900;
+  background-color: #A64C50;
 }
 
 html, body {
@@ -459,7 +465,7 @@ a:visited {
 
 .feature-title-link:hover {
   text-decoration: underline;
-  color: #b00; /* or your brand color */
+  color: #7c2529; /* or your brand color */
 }
 
 .feature-details {
