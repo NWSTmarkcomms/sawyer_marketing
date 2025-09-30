@@ -12,7 +12,7 @@
     
   <header class="header">
     <div class="logo-nav-container">
-      <img src="images/logo-placeholder.png" alt="Company Logo" class="logo" />
+      <img src="images/Sawyer.png" alt="Sawyer Logo" class="logo" />
     
 
 
@@ -24,15 +24,15 @@
 <nav class="navbar"> 
   <a href="catalog.html">All Materials</a>
   <a href="door-hangers.html">Door Hangers</a>
-  <a href="flyers.html">Flyers</a>
   <a href="leave-behinds.html">Leave Behinds</a>
+  <a href="event-materials.html">Event Materials</a>
   <a href="takeover.html">Takeover Cards</a>
   <a href="thank-you-cards.html">Thank You Cards</a>
   <a href="faq.html">FAQ</a>
   <a href="contact.html">Contact Us</a>
 </nav>
 
-</div>
+</header>
 
 
 
@@ -40,7 +40,7 @@
   </header>
 
   <section class="hero-banner">
-    <h1 class="hero-title">Marketing Material Portal</h1>
+    <h1 class="hero-title">Sawyer's Marketing Material Portal</h1>
   </section>
 
 <section class="feature-section" id="featureSection" aria-expanded="false">
@@ -67,21 +67,27 @@
   </div>
 </section>
 
+
+
+
+
   <main class="product-grid">
 
-    
-    <div class="product-card">
-      <h2 class="product-title">Date of Service Door Hanger - Matte (3.5x8.5")</h2>
+
+
+                  <div class="product-card">
+      <h2 class="product-title">All Services Door Hanger (3.5x8.5")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-        <input type="checkbox" id="expand-all-services-door-hanger" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-All Services Door Hanger" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-all-services-door-hanger">
+  <label class="flyer-thumb-container" for="expand-All Services Door Hanger">
     <img
-      alt="expand-all-services-door-hanger"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-allservices-dh-120.png"
+      src="images/SAW-allservices-dh-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -90,24 +96,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-all-services-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Date of Service Door Hanger - Matte "
-      class="flyer-expanded-img"
-      src="images/BHPC-allservices-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -119,37 +116,43 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
-            <input type="hidden" name="product" value="Date of Service Door Hanger - Matte" />
+            <input type="hidden" name="product" value="All Services Door Hanger" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-All Services Door Hanger">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-allservices-dh-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
-    
-    <div class="product-card">
+
+                      <div class="product-card">
       <h2 class="product-title">CrawlSpace Door Hanger (3.5x8.5")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-crawlspace-door-hanger" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-CrawlSpace Door Hanger" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-crawlspace-door-hanger">
+  <label class="flyer-thumb-container" for="expand-CrawlSpace Door Hanger">
     <img
-      alt="expand-crawlspace-door-hanger"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-crawlspace-dh-120.png"
+      src="images/SAW-crawlspace-dh-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -158,24 +161,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-crawlspace-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="CrawlSpace Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-crawlspace-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -187,37 +181,43 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
             <input type="hidden" name="product" value="CrawlSpace Door Hanger" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-CrawlSpace Door Hanger">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-crawlspace-dh-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
-    
-    <div class="product-card">
+
+                          <div class="product-card">
       <h2 class="product-title">In2Care Door Hanger (3.5x8.5")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-in2care-door-hanger" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-In2Care Door Hanger" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-in2care-door-hanger">
+  <label class="flyer-thumb-container" for="expand-In2Care Door Hanger">
     <img
-      alt="expand-in2care-door-hanger"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-in2care-dh-120.png"
+      src="images/SAW-in2care-dh-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -226,24 +226,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-in2care-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="In2Care Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-in2care-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -255,37 +246,43 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
             <input type="hidden" name="product" value="In2Care Door Hanger" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-In2Care Door Hanger">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-in2care-dh-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
-    
-    <div class="product-card">
+
+                              <div class="product-card">
       <h2 class="product-title">Mosquito Door Hanger (3.5x8.5")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-mosquito-door-hanger" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-Mosquito Door Hanger" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-mosquito-door-hanger">
+  <label class="flyer-thumb-container" for="expand-Mosquito Door Hanger">
     <img
-      alt="expand-mosquito-door-hanger"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-mosquito-dh-120.png"
+      src="images/SAW-mosquito-dh-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -294,24 +291,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-mosquito-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Mosquito Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-mosquito-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -323,299 +311,32 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
             <input type="hidden" name="product" value="Mosquito Door Hanger" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Sentricon Door Hanger (3.5x8.5")</h2>
-
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-sentricon-door-hanger" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-sentricon-door-hanger">
-    <img
-      alt="expand-sentricon-door-hanger"
-      class="flyer-thumb top-left"
-      src="images/BHPC-sentricon-dh-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
 
   <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-sentricon-door-hanger">
+  <label class="flyer-expanded-view" for="expand-Mosquito Door Hanger">
     <button aria-label="Close" class="flyer-close-button">×</button>
     <img
-      alt="Sentricon Door Hanger"
+      alt="All Services Leave Behind"
       class="flyer-expanded-img"
-      src="images/BHPC-sentricon-dh-720.png"
+      src="images/SAW-mosquito-dh-720.png"
     />
   </label>
 </div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Sentricon Door Hanger" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
       </div>
     </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Cellulose Insulation Door Hanger (3.5x8.5")</h2>
 
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-all-cellulose-insulation-door-hanger" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-cellulose-insulation-door-hanger">
-    <img
-      alt="expand-cellulose-insulaton-door-hanger"
-      class="flyer-thumb top-left"
-      src="images/BHPC-cellulose-insulation-dh-120.png"
-    />
 
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-cellulose-insulation-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Cellulose Insulation Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-cellulose-insulation-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Cellulose Insulation Door Hanger" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Wildlife Door Hanger (3.5x8.5")</h2>
-
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-wildlife-door-hanger" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-wildlife-door-hanger">
-    <img
-      alt="expand-willdife-door-hanger"
-      class="flyer-thumb top-left"
-      src="images/BHPC-wildlife-dh-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
-
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-wildlife-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Wildlife Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-wildllife-dh-720.png"
-    />
-  </label>
-</div>
-       
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Wildlife Door Hanger" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Specialty Services Door Hanger (3.5x8.5")</h2>
-
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-specialty-services-door-hanger" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-specialty-services-door-hanger">
-    <img
-      alt="expand-specialty-services-door-hanger"
-      class="flyer-thumb top-left"
-      src="images/BHPC-specialty-services-dh-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
-
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-specialty-services-door-hanger">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Specialty Services Door Hanger"
-      class="flyer-expanded-img"
-      src="images/BHPC-specialty-services-dh-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Specialty Services Door Hanger" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-          
     
   </main>
 <script>
@@ -687,6 +408,32 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleFeature(e);
     });
   }
+
+  // ✅ Form handler for Zapier + success message + redirect
+  window.handleFormSubmit = function(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    // Submit to Zapier webhook
+    form.submit();
+
+    // Clear the form
+    form.reset();
+
+    // Show success message only inside this product-card
+    const msg = form.closest('.product-details').querySelector('#successMessage');
+    if (msg) {
+      msg.style.display = 'block';
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 2000); // fade message before redirect
+    }
+
+    // Redirect after short delay
+    setTimeout(() => {
+      window.location.href = 'success.html';
+    }, 2500);
+    };
 });
 </script>
 

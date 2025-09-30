@@ -12,7 +12,7 @@
     
   <header class="header">
     <div class="logo-nav-container">
-      <img src="images/logo-placeholder.png" alt="Company Logo" class="logo" />
+      <img src="images/Sawyer.png" alt="Sawyer Logo" class="logo" />
     
 
 
@@ -24,15 +24,15 @@
 <nav class="navbar"> 
   <a href="catalog.html">All Materials</a>
   <a href="door-hangers.html">Door Hangers</a>
-  <a href="flyers.html">Flyers</a>
   <a href="leave-behinds.html">Leave Behinds</a>
+  <a href="event-materials.html">Event Materials</a>
   <a href="takeover.html">Takeover Cards</a>
   <a href="thank-you-cards.html">Thank You Cards</a>
   <a href="faq.html">FAQ</a>
   <a href="contact.html">Contact Us</a>
 </nav>
 
-</div>
+</header>
 
 
 
@@ -40,7 +40,7 @@
   </header>
 
   <section class="hero-banner">
-    <h1 class="hero-title">Marketing Material Portal</h1>
+    <h1 class="hero-title">Sawyer's Marketing Material Portal</h1>
   </section>
 
 <section class="feature-section" id="featureSection" aria-expanded="false">
@@ -51,25 +51,29 @@
           Which Marketing Material Fits Your Moment?
         </a>
       </h2>
-      <div class="feature-details" id="featureDetails">
-      <p><strong>Door Hangers (3.5x8.5")</strong><br>
-      Designed with your clover leafing strategy in mind.</p>
-      <p><strong>Flyers (8.5x11")</strong><br>
-      The largest way to share your services. Perfect for community boards, commercial leave-behinds, and high-impact messaging.</p>
-      <p><strong>Leave Behinds (4x9")</strong><br>
-      Designed for in-person connection and extraordinary events. A friendly, sleek way to continue the conversation.</p>
-      <p><strong>Takeover Cards (3x5")</strong><br>
-      Share $25 discounts to new customers at events.</p>
-      <p><strong>Thank You Cards (3x5")</strong><br>
-      A kind word goes a long way. Use these to show appreciation for your community or teammates.</p>
+      <div class="feature-details">
+        <p><strong>Door Hangers (3.5x8.5")</strong><br>
+        Designed with your clover leafing strategy in mind.</p>
+        <p><strong>Flyers (8.5x11")</strong><br>
+        The largest way to share your services. Perfect for community boards, commercial leave-behinds, and high-impact messaging.</p>
+        <p><strong>Leave Behinds (4x9")</strong><br>
+        Designed for in-person connection and extraordinary events. A friendly, sleek way to continue the conversation.</p>
+        <p><strong>Takeover Cards (3x5")</strong><br>
+        Share $25 discounts to new customers at events.</p>
+        <p><strong>Thank You Cards (3x5")</strong><br>
+        A kind word goes a long way. Use these to show appreciation for your community or teammates.</p>
+      </div>
     </div>
   </div>
 </section>
 
 
+
+
+
   <main class="product-grid">
 
-    <div class="product-card">
+   <div class="product-card">
       <h2 class="product-title">All Services Leave Behind (4x9")</h2>
 
         <div class="row-layout">
@@ -81,7 +85,7 @@
     <img
       alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-allservices-lb-120.png"
+      src="images/SAW-allservices-lb-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -89,6 +93,37 @@
       Click Here to Zoom
     </p>
   </label>
+
+   <div class="product-details">
+      <form 
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
+            <input type="text" name="fullName" placeholder="Manager Name" required />
+            <input type="email" name="email" placeholder="Manager Email" required />
+            <select name="Quantity" required>
+              <option value="" disabled selected>Select Quantity</option>
+              <option value="100">100</option>
+              <option value="250">250</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+            <select name="office" required>
+              <option value="" disabled selected>Select Office</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
+            </select>
+            <input type="hidden" name="product" value="All Services Leave Behind" />
+            <button type="submit" class="button">Request</button>
+          </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
+        </div>
 
   <!-- This section shows the expanded view -->
   <label class="flyer-expanded-view" for="expand-all-services-leave-behind">
@@ -96,60 +131,26 @@
     <img
       alt="All Services Leave Behind"
       class="flyer-expanded-img"
-      src="images/BHPC-allservices-lb-720.png"
+      src="images/SAW-allservices-lb-720.png"
     />
   </label>
 </div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="All Services Leave Behind" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
       </div>
     </div>
-    
-    <div class="product-card">
+
+   <div class="product-card">
       <h2 class="product-title">CrawlSpace Leave Behind (4x9")</h2>
-      
+
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-crawlspace-leave-behind" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-CrawlSpace Leave Behind" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-crawlspace-leave-behind">
+  <label class="flyer-thumb-container" for="expand-CrawlSpace Leave Behind">
     <img
-      alt="Crawl Space Leave Behind"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-crawlspace-lb-120.png"
+      src="images/SAW-crawlspace-lb-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -158,24 +159,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-crawlspace-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="CrawlSpace Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-crawlspace-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -187,37 +179,46 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
             <input type="hidden" name="product" value="CrawlSpace Leave Behind" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-CrawlSpace Leave Behind">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-crawlspace-lb-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
+
+
     
-    <div class="product-card">
-      <h2 class="product-title">Mosquito Leave Behind (4x9")</h2>
-      
+
+          <div class="product-card">
+      <h2 class="product-title">Green Services Leave Behind (4x9")</h2>
+
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-mosquito-leave-behind" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-Green Services Leave Behind" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-mosquito-leave-behind">
+  <label class="flyer-thumb-container" for="expand-Green Services Leave Behind">
     <img
-      alt="expand-mosquito-leave-behind"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-mosquito-lb-120.png"
+      src="images/SAW-green-services-lb-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -226,24 +227,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-mosquito-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Mosquito Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-mosquito-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -255,37 +247,109 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
+            </select>
+            <input type="hidden" name="product" value="Green Services Leave Behind" />
+            <button type="submit" class="button">Request</button>
+          </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
+        </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-Green Services Leave Behind">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-green-services-lb-720.png"
+    />
+  </label>
+</div>
+      </div>
+    </div>
+
+              <div class="product-card">
+      <h2 class="product-title">Mosquito Leave Behind (4x9")</h2>
+
+        <div class="row-layout">
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-Mosquito Leave Behind" type="checkbox" />
+
+  <!-- 👇 This label controls the expand toggle -->
+  <label class="flyer-thumb-container" for="expand-Mosquito Leave Behind">
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-thumb top-left"
+      src="images/SAW-mosquito-lb-120.png"
+    />
+
+    <!-- 👇 This text is part of the same label, so it's clickable too -->
+    <p style="text-align: center; font-size: 0.9rem; color: #444;">
+      Click Here to Zoom
+    </p>
+  </label>
+
+   <div class="product-details">
+      <form 
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
+            <input type="text" name="fullName" placeholder="Manager Name" required />
+            <input type="email" name="email" placeholder="Manager Email" required />
+            <select name="Quantity" required>
+              <option value="" disabled selected>Select Quantity</option>
+              <option value="100">100</option>
+              <option value="250">250</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+            </select>
+            <select name="office" required>
+              <option value="" disabled selected>Select Office</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
             <input type="hidden" name="product" value="Mosquito Leave Behind" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-Mosquito Leave Behind">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-mosquito-lb-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Sentricon Leave Behind (4x9")</h2>
+
+
+              <div class="product-card">
+      <h2 class="product-title">Mosquito Leave Behind (4x9")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-sentricon-leave-behind" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-Mosquito Leave Behind" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-sentricon-leave-behind">
+  <label class="flyer-thumb-container" for="expand-Mosquito Leave Behind">
     <img
-      alt="expand-sentricon-leave-behind"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-sentricon-lb-120.png"
+      src="images/SAW-mosquito-lb-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -294,24 +358,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-sentricon-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Mosquito Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-sentricon-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -323,37 +378,43 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
-            <input type="hidden" name="product" value="Sentricon Leave Behind" />
+            <input type="hidden" name="product" value="Mosquito Leave Behind" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
+
+  <!-- This section shows the expanded view -->
+  <label class="flyer-expanded-view" for="expand-Mosquito Leave Behind">
+    <button aria-label="Close" class="flyer-close-button">×</button>
+    <img
+      alt="All Services Leave Behind"
+      class="flyer-expanded-img"
+      src="images/SAW-mosquito-lb-720.png"
+    />
+  </label>
+</div>
       </div>
     </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Cellulose Insulation Leave Behind (4x9")</h2>
+
+                      <div class="product-card">
+      <h2 class="product-title">Green Elite Plus Postcard (4x6")</h2>
 
         <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-cellulose-insulation-leave-behind" class="expand-checkbox" hidden>
+<div class="flyer-expand-toggle">
+  <input class="expand-checkbox" hidden id="expand-Green Elite Plus Postcard" type="checkbox" />
+
   <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-cellulose-leave-behind">
+  <label class="flyer-thumb-container" for="expand-Green Elite Plus Postcard">
     <img
-      alt="expand-cellulose-insulation-leave-behind"
+      alt="All Services Leave Behind"
       class="flyer-thumb top-left"
-      src="images/BHPC-cellulose-insulation-lb-120.png"
+      src="images/SAW-green-elite-plus-postcard-120.png"
     />
 
     <!-- 👇 This text is part of the same label, so it's clickable too -->
@@ -362,24 +423,15 @@
     </p>
   </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-cellulose-insulation-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Cellulose Insulation Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-cellulose-insulation-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
+   <div class="product-details">
       <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
+  action="https://hooks.zapier.com/hooks/catch/12716030/um5y02s/" 
+  method="POST" 
+  target="hiddenFrame" 
+  onsubmit="handleFormSubmit(event)" 
+>
+
+
             <input type="text" name="fullName" placeholder="Manager Name" required />
             <input type="email" name="email" placeholder="Manager Email" required />
             <select name="Quantity" required>
@@ -391,228 +443,32 @@
             </select>
             <select name="office" required>
               <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
+        <option value="Sawyer Exterminating">Sawyer Exterminating</option> 
             </select>
-            <input type="hidden" name="product" value="Cellulose Leave Behind" />
+            <input type="hidden" name="product" value="Green Elite Plus Postcard" />
             <button type="submit" class="button">Request</button>
           </form>
+
+          <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+  🥳 Stay tuned for an email confirmation!
+</p>
         </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Wildlife Leave Behind (4x9")</h2>
-
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-wildlife-leave-behind" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-wildlife-leave-behind">
-    <img
-      alt="expand-wildlife-leave-behind"
-      class="flyer-thumb top-left"
-      src="images/BHPC-wildlife-lb-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
 
   <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-wildlife-leave-behind">
+  <label class="flyer-expanded-view" for="expand-Green Elite Plus Postcard">
     <button aria-label="Close" class="flyer-close-button">×</button>
     <img
-      alt="Wildlife Leave Behind"
+      alt="All Services Leave Behind"
       class="flyer-expanded-img"
-      src="images/BHPC-Wildlife-lb-720.png"
+      src="images/SAW-green-elite-plus-postcard-720.png"
     />
   </label>
 </div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Wildlife Leave Behind" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
       </div>
     </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">In2Care Leave Behind (4x9")</h2>
 
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-in2care-leave-behind" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-in2care-leave-behind">
-    <img
-      alt="expand-in2care-leave-behind"
-      class="flyer-thumb top-left"
-      src="images/BHPC-in2care-lb-120.png"
-    />
 
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
 
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-in2care-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="In2Care Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-in2care-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="In2Care Leave Behind" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-    <div class="product-card">
-      <h2 class="product-title">Specialty Services Leave Behind (4x9")</h2>
-
-        <div class="row-layout">
-        <div class="flyer-expand-toggle">
-          <input type="checkbox" id="expand-specialty-services-leave-behind" class="expand-checkbox" hidden>
-  <!-- 👇 This label controls the expand toggle -->
-  <label class="flyer-thumb-container" for="expand-specialty-services-leave-behind">
-    <img
-      alt="expand-specialty-services-leave-behind"
-      class="flyer-thumb top-left"
-      src="images/BHPC-specialty-services-lb-120.png"
-    />
-
-    <!-- 👇 This text is part of the same label, so it's clickable too -->
-    <p style="text-align: center; font-size: 0.9rem; color: #444;">
-      Click Here to Zoom
-    </p>
-  </label>
-
-  <!-- This section shows the expanded view -->
-  <label class="flyer-expanded-view" for="expand-specialty-services-leave-behind">
-    <button aria-label="Close" class="flyer-close-button">×</button>
-    <img
-      alt="Specialty Services Leave Behind"
-      class="flyer-expanded-img"
-      src="images/BHPC-specialty-services-lb-720.png"
-    />
-  </label>
-</div>
-          
-        <div class="product-details">
-      <form 
-        action="https://hooks.zapier.com/hooks/catch/12716030/uodfhsh/" 
-        method="POST" 
-        target="hiddenFrame"
-        onsubmit="setTimeout(() => { window.location.href = 'https://bughousesuccess.netlify.app/'; }, 1000);"
-      >
-            <input type="text" name="fullName" placeholder="Manager Name" required />
-            <input type="email" name="email" placeholder="Manager Email" required />
-            <select name="Quantity" required>
-              <option value="" disabled selected>Select Quantity</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-            </select>
-            <select name="office" required>
-              <option value="" disabled selected>Select Office</option>
-        <option value="Augusta - BHPC">Augusta - BHPC</option>
-        <option value="Carrollton - BHPC">Carrollton - BHPC</option>
-        <option value="Dublin - BHPC">Dublin - BHPC</option>
-        <option value="Eastman - BHPC">Eastman - BHPC</option>
-        <option value="Greensboro - BHPC">Greensboro - BHPC</option>
-        <option value="Macon - BHPC">Macon - BHPC</option>
-        <option value="Madison - BHPC">Madison - BHPC</option>
-        <option value="Milledgeville - BHPC">Milledgeville - BHPC</option>
-        <option value="St. Simons - BHPC">St. Simons - BHPC</option>
-        <option value="Warner Robins - BHPC">Warner Robins - BHPC</option>
-        <option value="Watkinsville - BHPC">Watkinsville - BHPC</option>
-            </select>
-            <input type="hidden" name="product" value="Specialty Services Leave Behind" />
-            <button type="submit" class="button">Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
 
     
   </main>
@@ -685,8 +541,35 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleFeature(e);
     });
   }
+
+  // ✅ Form handler for Zapier + success message + redirect
+  window.handleFormSubmit = function(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    // Submit to Zapier webhook
+    form.submit();
+
+    // Clear the form
+    form.reset();
+
+    // Show success message only inside this product-card
+    const msg = form.closest('.product-details').querySelector('#successMessage');
+    if (msg) {
+      msg.style.display = 'block';
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 2000); // fade message before redirect
+    }
+
+    // Redirect after short delay
+    setTimeout(() => {
+      window.location.href = 'success.html';
+    }, 2500);
+    };
 });
 </script>
+
 
 </body>
 </html>
